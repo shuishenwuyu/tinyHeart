@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>tinyHeart</title>
+    <style type="text/css">
+        body, html {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            padding-top: 10px;
+        }
+        .bg {
+            width: 800px;
+            height: 600px;
+            margin: 0 auto;
+            background-color: bisque;
+        }
+        #allCanvas {
+            position: relative;
+            width: 800px;
+            height: 600px;
+            margin: 0;
+        }
+        #canvas1 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: 1;
+        }
+        #canvas2 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div id="allCanvas">
+            <canvas id="canvas1" width="800" height="600"></canvas>
+            <canvas id="canvas2" width="800" height="600"></canvas>
+        </div>
+    </div>
+
+</body>
+
+</html>
